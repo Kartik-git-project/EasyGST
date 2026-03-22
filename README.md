@@ -1,4 +1,4 @@
-EasyGST – Smart GST Analysis & AI Assistant
+## EasyGST – Smart GST Analysis & AI Assistant
 
 EasyGST is an AI-powered web application designed to simplify GST management for businesses, freelancers, and accountants. It allows users to upload financial data in multiple formats such as CSV, PDF, and images, and generates smart, automated insights to help understand and manage GST efficiently.
 
@@ -6,6 +6,7 @@ The platform goes beyond traditional tools by integrating an AI chatbot assistan
 
 To make the experience more accessible, EasyGST is also being enhanced with speech recognition capabilities, allowing users to communicate with the system using voice commands in multiple languages—removing the need for typing and making it more user-friendly.
 
+# FOR TESTING I HAD PROVIDED THE TEST FOLDER -"TestFiles"(where 3 csv file are present)
 
 Project Tool Desc. ->
 -- HTML
