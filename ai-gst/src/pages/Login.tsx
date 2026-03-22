@@ -5,9 +5,10 @@ import { Label } from "@/components/ui/label";
 import { useNavigate } from "react-router-dom";
 import { Zap, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import { auth } from "@/lib/firebase";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import {createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 import { useAuth } from "@/hooks/useAuth";
+import { getRedirectResult } from "firebase/auth";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -46,12 +47,7 @@ useEffect(() => {
 const handleGoogleLogin = async () => {
   try {
     const provider = new GoogleAuthProvider();
-
-    const result = await signInWithPopup(auth, provider);
-
-    console.log("Logged in user:", result.user);
-
-    navigate("/welcome");
+    await signInWithRedirect(auth, provider);
   } catch (error) {
     console.error("Google login error:", error);
   }
