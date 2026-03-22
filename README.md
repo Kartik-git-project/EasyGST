@@ -7,6 +7,14 @@ The platform goes beyond traditional tools by integrating an AI chatbot assistan
 To make the experience more accessible, EasyGST is also being enhanced with speech recognition capabilities, allowing users to communicate with the system using voice commands in multiple languages—removing the need for typing and making it more user-friendly.
 
 
+Project Tool Desc. ->
+-- HTML
+-- CSS
+-- JS
+-- TypeScript
+-- FireBase Auth.
+-- FireCloud Database
+
 
 Key Features
 1. Multi-format Data Upload – Analyze GST data from CSV files, PDFs, and images
