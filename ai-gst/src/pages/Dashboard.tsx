@@ -81,14 +81,14 @@ const generateAITaxTips = async (summary:any) => {
 
 try{
 
-console.log("AI Summary Sent:",summary);
+console.log("API KEY:", import.meta.env.VITE_OPENROUTER_API_KEY);
 
 const response = await fetch("https://openrouter.ai/api/v1/chat/completions",{
 method:"POST",
 headers:{
 "Content-Type":"application/json",
 "Authorization":`Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
-"HTTP-Referer":"http://localhost:5173",
+"HTTP-Referer": window.location.origin,
 "X-Title":"EasyGST"
 },
 body:JSON.stringify({
